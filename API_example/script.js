@@ -1,7 +1,7 @@
 let qrcd;
 
 function initMap() {
-  var qrcd = new POST(document.getById('qr'), {
+  var qrcd = new POST(document.getElementById('qr'), {
     "frame_name": "no-frame",
     "qr_code_text": "https://www.qr-code-generator.com/",
     "image_format": "SVG",
