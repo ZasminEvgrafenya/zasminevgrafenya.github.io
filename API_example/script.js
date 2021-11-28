@@ -1,8 +1,10 @@
-let map;
+let qrcd;
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
-    center: { lat: -34.397, lng: 150.644 },
-    zoom: 8,
+  var qrcd = new POST(document.getById('qr'), {
+    "frame_name": "no-frame",
+    "qr_code_text": "https://www.qr-code-generator.com/",
+    "image_format": "SVG",
+    "qr_code_logo": "scan-me-square"
   });
 }
